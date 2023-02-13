@@ -26,23 +26,23 @@ func Fatal(msg string, fields ...zap.Field) {
 	zapLogger.Fatal(msg, fields...)
 }
 
-func Debugf(template string, args ...any) {
+func Debugf(template string, args ...interface{}) {
 	zapLogger.Sugar().Debugf(template, args...)
 }
 
-func Infof(template string, args ...any) {
+func Infof(template string, args ...interface{}) {
 	zapLogger.Sugar().Infof(template, args...)
 }
 
-func Warnf(template string, args ...any) {
+func Warnf(template string, args ...interface{}) {
 	zapLogger.Sugar().Warnf(template, args...)
 }
 
-func Errorf(template string, args ...any) {
+func Errorf(template string, args ...interface{}) {
 	zapLogger.Sugar().Errorf(template, args...)
 }
 
-func Fatalf(template string, args ...any) {
+func Fatalf(template string, args ...interface{}) {
 	zapLogger.Sugar().Fatalf(template, args...)
 }
 
